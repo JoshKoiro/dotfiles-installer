@@ -1,7 +1,7 @@
 #!/bin/bash
 
 pkill ssh-agent
-source ~/.bashrc
+exec bash
 # Clone the dotfiles repo
 git clone --bare git@github.com:JoshKoiro/dotfiles.git $HOME/.dotfiles
 
