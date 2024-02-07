@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Command required to be able to use the aliases defined in the script
+shopt -s expand_aliases
+
 # Set a temporary alias to access the repo
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
 
