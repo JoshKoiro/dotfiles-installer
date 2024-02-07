@@ -6,7 +6,7 @@
 sudo apt install git
 
 ## Run script to configure ssh for Github
-# /bin/bash -c "$(curl -fsSL https://raw.Githubusercontent.com/JoshKoiro/github-ssh/main/config.sh)"
+/bin/bash -c "$(curl -fsSL https://raw.Githubusercontent.com/JoshKoiro/github-ssh/main/config.sh)"
 
 # Clone the dotfiles repo
 git clone --bare git@github.com:JoshKoiro/dotfiles.git $HOME/.dotfiles
