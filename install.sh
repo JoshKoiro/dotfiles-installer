@@ -1,14 +1,13 @@
 #!/bin/bash
 
+# Set a temporary alias to access the repo
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
 
 # Clone the dotfiles repo
 git clone --bare git@github.com:JoshKoiro/dotfiles.git $HOME/.dotfiles
 
-# Set a temporary alias to access the repo
-alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
-
 # Remove the .bashrc file so that we won't have an error when the dotfiles checkout happens
+cp ~/.bashrc ~/.bashrc.bak
 rm ~/.bashrc
 
 # Checkout the debian-server branch
