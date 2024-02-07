@@ -21,4 +21,4 @@ dotfiles config --local status.showUntrackedFiles no
 
 # Kill hanging ssh-agent processes
 pkill ssh-agent
-exec bash
+source ~/.bashrc
