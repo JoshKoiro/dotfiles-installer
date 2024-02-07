@@ -21,4 +21,4 @@ dotfiles config --local status.showUntrackedFiles no
 
 # Kill hanging ssh-agent processes
 pkill ssh-agent
-source ~/.bashrc
+color ${INFO} "\nPlease refresh your shell by running source ~/.bashrc\n"
