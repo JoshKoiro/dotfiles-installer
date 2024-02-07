@@ -1,5 +1,7 @@
 #!/bin/bash
 
+alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
+
 # Clone the dotfiles repo
 git clone --bare git@github.com:JoshKoiro/dotfiles.git $HOME/.dotfiles
 
@@ -17,6 +19,4 @@ dotfiles config --local status.showUntrackedFiles no
 
 # Kill hanging ssh-agent processes
 pkill ssh-agent
-
-# Restart bash
-source ~/.bashrc
+exec bash
